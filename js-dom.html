@@ -6,8 +6,26 @@
 </head>
 <body>
 
-<p id="1">I am formatted with a linked style sheet</h1>
-<p id="2">Me too!</p>
+<div>
+<p id="1">We are coders!</p>
+<p id="2"></p>
+</div>
 
+<img id="pic" src="C:\Users\Talus Batmobille.000\Desktop\Coding projects\js-dom\JavaScript-DOM\lib\images\Stacy Spikes.jpg" alt="Girl in a jacket" width="500" height="600">
+
+
+<button onclick="myFunction()"type="button">Hide!</button>
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("Developers for life!");
+        para.appendChild(node);
+        var element = document.getElementById("2");
+        element.appendChild(para);
+
+        function myFunction() {
+        document.getElementById("1").style.color = "#ff0000";
+        document.getElementById("pic").style.opacity = 0;
+        }
+    </script>
 </body>
 </html>
