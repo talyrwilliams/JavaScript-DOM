@@ -6,8 +6,8 @@
 </head>
 <body>
 
-<div>
-<p id="1">We are coders!</p>
+<div id="div1">
+<p id="1"></p>
 <p id="2"></p>
 </div>
 
@@ -15,16 +15,28 @@
 
 
 <button onclick="myFunction()"type="button">Hide!</button>
+
     <script>
         var para = document.createElement("p");
-        var node = document.createTextNode("Developers for life!");
+        var node = document.createTextNode("We are coders!");
         para.appendChild(node);
-        var element = document.getElementById("2");
+
+        var element = document.getElementById("div1");
         element.appendChild(para);
 
-        function myFunction() {
+
+        var para = document.createElement("p");
         document.getElementById("1").style.color = "#ff0000";
-        document.getElementById("pic").style.opacity = 0;
+        document.getElementById("1").innerHTML = "Developers for life!";
+        document.getElementById("1").style.fontSize = "x-large";
+
+        function myFunction() {
+        var x = document.getElementById ("pic");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
         }
     </script>
 </body>

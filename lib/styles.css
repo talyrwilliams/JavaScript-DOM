@@ -1,5 +1,7 @@
 html,
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   background-color: #cccccc;
@@ -52,3 +54,4 @@ h3 {
   display: block;
   margin: 10px auto;
 }
+
